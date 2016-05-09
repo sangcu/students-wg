@@ -1,0 +1,361 @@
+/* COMMON CSS*/
+@font-face{
+    font-family: Fontawesome;
+    src: url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.tff') format('tff'),
+    url('../fonts/fontawesome-webfont.woff') format('woff2');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font: 400 16px/24px 'Roboto',arial, sans-serif; 
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #2980B9;
+	transition: 0.35s ease;
+}
+
+a:hover{
+	color:#000;
+}
+
+p{
+    font: 400 16px/24px 'Roboto Slab', serif;
+    color: #666;
+}
+
+li{
+    list-style: none;
+}
+
+.clear-fix:after, .clear-fix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container{
+    background: #F5F5F5;
+}
+
+.content{
+    margin: 0px auto;
+    max-width: 1170px;
+}
+
+.heading-for-outline{
+    left: -1000em;
+    position: absolute;
+}
+
+/* ===== HEADER =====*/
+header{
+    background: white;
+}
+header .content{
+    overflow: auto;
+    padding: 4rem 0px;
+}
+
+header .logo-slogan{
+    width: 30%;
+    float: left;
+}
+
+header .top-links{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.vertical-menu ul>li{
+    display: inline-block;
+}
+
+.vertical-menu ul>li a{
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .top-links li a{ 
+    color: #2c3e50 ;
+    transition: ease 0.35s;
+}
+
+header .top-links li a:hover{ 
+    background: #2980B9;
+    color: white ;
+}
+
+header .logo-slogan h1{
+    font-size: 14px;
+    font-weight: 300;
+    color: #9D9B99;
+}
+
+header .logo-slogan img{
+    width: 65px;
+}
+
+
+/* ===== NAV =====*/
+nav{
+    background: #2980B9;
+    overflow: auto;
+}
+
+nav .menu ul .search{
+    float: right;
+}
+
+nav .menu ul>li{
+    line-height: 80px;
+}
+
+nav .menu ul>li a{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    margin: inherit;
+}
+
+nav .menu ul>li a:hover{
+    color: #0F3045;
+    transition: 0.3s ease;
+}
+
+nav .search input[type='search']{
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #eee inset;
+    font-weight: 600;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===== BLOG ENTRY =====*/
+.content-wrap{
+    background: #F5F5F5;
+}
+
+.content .main-content{
+    margin: 30px 0px;
+    max-width: 770px;
+    float: left;
+}
+
+.blog-entry{
+    background: #fff;
+    margin: 20px 0px 40px 0px;
+    padding: 40px;
+    border: 1px solid #DFE0E4;
+    border-radius: 3px;
+    box-shadow: 0px 1px rgba(0,0,0,0.15);
+}
+
+.blog-entry h3{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 15px 0px;
+}
+
+.blog-entry .post-info{
+    font-size: 16px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 24px;
+}
+
+.blog-entry .post-info .author::before{
+    content: '';
+    font-family: Fontawesome;
+    font-weight: 100;
+    color: #999999;
+    padding: 10px;
+}
+
+.blog-entry .post-info .posted-on::before{
+    content: '';
+    font-family: Fontawesome;
+    font-weight: 100;
+    color: #999999;
+    padding: 10px;
+}
+
+.blog-entry .post-info .categories-links::before{
+    content: '';
+    font-family: Fontawesome;
+    font-weight: 100;
+    color: #999999;
+    padding: 10px;
+}
+
+.blog-entry .img-thumbs{
+    width: 200px;
+    height: auto;
+    float: left;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+/*------ BUTTON------*/
+.blog-entry .button-see-more button{
+    float: right;
+    border: 1px solid #ddd;
+    padding: 13px;
+    margin: 20px;
+    background: #2980b9;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.35s ease;
+    width: 150px;
+}
+
+.blog-entry .button-see-more button:hover{
+    background: #333333;
+    cursor: pointer;
+}
+
+.blog-entry .button-see-more button:after{
+    content: '';
+    font-family: Fontawesome;
+    font-size: 13px;
+    padding-left: 7px;
+}
+
+/*------ FACEBOOK SHARE------*/
+.blog-entry .share-links{
+    font-family: 'Roboto Slab';
+}
+
+.blog-entry .share-links .facebook-button{
+    transition: 0.35s ease; 
+}
+
+.blog-entry .share-links .facebook-button:hover{
+    color: #333333;
+}
+
+/* ===== PAGEINATION-LINKS =====*/
+.page-number-button{
+    width: 60px;
+    height: 50px;
+    background: #2980B9;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    transition: 0.35s ease;
+}
+
+.page-number-button:first-child{
+    border-right: 1px solid white;
+}
+
+.page-number-button:last-child:hover{
+    background: #000;
+	color:#fff!important;
+}
+
+/* ===== ASIDE =====*/
+
+.sidebar {
+    max-width: 370px!important;
+    float: right!important;
+}
+
+/*------ SUBSCRIBE -----*/
+
+.subscribe{
+    background: #2980B9;
+    padding: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+.subscribe h1{
+    font: 20px/24px;
+    color: #fff;
+    text-transform: uppercase;  
+    margin: 15px 0px;
+}
+
+.subscribe p{
+    font: 16px/28px Roboto;
+    color: rgb(255, 235, 205);
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.subscribe form input[type='text']{
+    padding: 16px;
+    width: 100%;
+    color: #999;
+}
+
+.subscribe form input[type='submit']{
+    padding: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    margin: 15px 0px;
+    width: auto;
+    transition: 0.3s ease;
+}
+
+.subscribe form input[type='submit']:hover{
+    background: #000;
+}
+
+/*------ SUBSCRIBE -----*/
+.sidebar-links{
+    background: #fff;
+    border: 1px solid rgb(223, 224, 228);
+    box-shadow: 0px 1px rgba(0,0,0,0.15);
+    padding: 20px;
+}
+
+.sidebar-links h1{
+    font: bold 20px/24px 'Roboto';
+    color: #313131;
+    margin: 15px 0px;
+}
+
+.sidebar-links ul li h2{
+    font: 300 16px/28px 'Roboto';
+    padding: 6px 0px;
+    text-transform: capitalize;
+}
+
+/* ===== FOOTER =====*/
+footer{
+    text-align: center; 
+    font: 300 14px/24px 'Roboto';
+    color: #999;
+    padding: 20px;
+}
+
+footer a{
+    border-bottom: 1px dashed #ddd;
+    transition: 0.35 ease;
+}
+
+footer a:hover{
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #2980B9;
+}
